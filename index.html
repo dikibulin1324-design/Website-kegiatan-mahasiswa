@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Kegiatan Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Catatan Kegiatan</h1>
+        <nav>
+            <a href="#beranda">Beranda</a>
+            <a href="#kegiatan">Kegiatan</a>
+            <a href="#tentang">Tentang</a>
+        </nav>
+        <button id="tombolTema" type="button">Mode Gelap</button>
+    </header>
+
+    <main>
+        <section id="beranda" class="bagian">
+            <h2>Selamat Datang</h2>
+            <p>Website sederhana untuk mencatat kegiatan sehari-hari mahasiswa.</p>
+            <p id="pesan">Yuk, catat kegiatanmu hari ini!</p>
+        </section>
+
+        <section id="kegiatan" class="bagian">
+            <h2>Daftar Kegiatan</h2>
+            <form id="formKegiatan">
+                <label for="inputKegiatan">Nama kegiatan</label>
+                <input type="text" id="inputKegiatan" placeholder="Contoh: Mengerjakan tugas">
+                <button type="submit">Tambah Kegiatan</button>
+            </form>
+            <p id="peringatan" aria-live="polite"></p>
+            <ul id="daftarKegiatan"></ul>
+        </section>
+
+        <section id="tentang" class="bagian">
+            <h2>Tentang Website</h2>
+            <p>Website ini dibuat sebagai latihan dasar HTML, CSS, dan JavaScript.</p>
+            <p>Dengan website ini, pengguna bisa menulis dan menghapus daftar kegiatan.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Latihan Pemrograman Berbasis Web</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
